@@ -1,0 +1,15 @@
+
+#lights-image{
+	/*max-width:1920px;
+	max-height:1080px; */
+	width:100%;
+	height:100%;
+	display:block;
+	position:fixed; /* Make the image stay in the same place, regardless of scrolling */
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	pointer-events:none;
+	z-index: 2147483647; /* Some websites have super high z-index levels and the only way to get around it is to have a higher z-index level */
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Decorative Overlays",
+  "version": "0.1.0",
+  "icons": {"128": "icon128x128.png"},
+  "description": "Decorative Overlays is an extension that overlays images, such as light strands, to your browser",
+  "permissions": [ "storage", "tabs" ],
+  "content_scripts": [
+	{
+		"matches": ["<all_urls>"],
+		"css": ["styles.css"],
+		"js": ["content-script.js"]
+	}
+  ],
+  "web_accessible_resources": [
+  "styles.css",
+  "images/*.png"
+  ],
+  "browser_action": {
+	"default_icon": "icon128x128.png",
+	"default_title": "Decorative Overlays",
+	"default_popup": "options.html"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}

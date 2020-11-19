@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html style="width: 300px;">
+<body>
+<!-- Just a quick and simple style to make things look nicer than plain HTML -->
+<style>
+#save {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+#lightType {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+#lightOpacity {
+  width: 100%;
+}
+#status {
+  color: blue;
+  text-align: center;
+}
+</style>
+<!-- Selecting the overlay -->
+<h1>Choose your overlay style:</h1>
+<select id="lightType" onchange="optionSelectCheck(this);">
+ <option value="none">None</option>
+ <option value="bookshelf1">Bookshelves</option>
+ <option value="party1">Party</option>
+ <option value="easter1">Easter</option>
+ <option value="thanksgiving1">Thanksgiving</option>
+ <option value="halloween1">Halloween Lights</option>
+ <option value="halloween2">Jack O Lantern Stack</option>
+ <option value="snowflake1">Snowflakes</option>
+ <option value="icicles1">Icicles</option>
+ <option value="christmas1">Christmas Lights</option>
+ <option value="custom">Custom Image</option>
+</select>
+<br><br>
+<h1>Choose your opacity level:</h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="100" id="lightOpacity">
+</div>
+<br><br>
+<button id="save">Save</button>
+<h2 id="status"></h2>
+<script src="options.js"></script>
+</body>
+</html>
